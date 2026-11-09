@@ -91,7 +91,7 @@ AWS_REGION = config("AWS_REGION", default="us-east-1")
 
 AWS_STORAGE_BUCKET_NAME = config(
     "AWS_STORAGE_BUCKET_NAME",
-    default="awscapstonesguilesblog"
+    default="awscapstonesmahirblog"
 )
 
 AWS_S3_REGION_NAME = AWS_REGION
@@ -125,8 +125,8 @@ def get_ssm_parameter(name):
     return response["Parameter"]["Value"]
 
 
-db_username = get_ssm_parameter("/guile/capstone/username")
-db_password = get_ssm_parameter("/guile/capstone/password")
+db_username = get_ssm_parameter("/mahir/capstone/username")
+db_password = get_ssm_parameter("/mahir/capstone/password")
 
 
 DATABASES = {
